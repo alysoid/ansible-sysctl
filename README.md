@@ -22,7 +22,7 @@ sysctl_conf:
       fs.inotify.max_user_watches: 524288
 ```
 
-### `sysctl_conf`
+### `sysctl_cleanup`
 
 Remove all existing configuration files before creating the new ones.
 
