@@ -1,0 +1,6 @@
+---
+# Set sysctl configuration files
+sysctl_conf: []
+
+# Remove all existing configuration files when true
+sysctl_cleanup: false

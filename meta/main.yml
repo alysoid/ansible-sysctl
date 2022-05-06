@@ -1,0 +1,23 @@
+---
+galaxy_info:
+  author: Andrea Brandi
+  description: Configure kernel parameters using sysctl with sysctl.conf snippets managed by systemd-sysctl
+  license: MIT
+
+  min_ansible_version: 2.1
+
+  platforms:
+    - name: ArchLinux
+      versions:
+        - all
+    - name: Ubuntu
+      versions:
+        - all
+
+  galaxy_tags:
+    - system
+    - systemd
+    - sysctl
+    - kernel
+
+dependencies: []
