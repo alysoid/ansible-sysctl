@@ -4,16 +4,16 @@ Configure kernel parameters at runtime with [sysctl](https://wiki.archlinux.org/
 
 ## Role variables
 
-### `sysctl_conf`
+### `catena_sysctl`
 
 Manage sysctl configuration files. They will be placed in `/etc/sysctl.d` directory.
 
 ```yaml
 # Default
-sysctl_conf: []
+catena_sysctl: []
 
 # Example
-sysctl_conf:
+catena_sysctl:
   # /etc/sysctl.d/10-arch.conf
   - name: 10-arch
     options:
@@ -22,11 +22,11 @@ sysctl_conf:
       fs.inotify.max_user_watches: 524288
 ```
 
-### `sysctl_cleanup`
+### `catena_sysctl_cleanup`
 
 Remove all existing configuration files before creating the new ones.
 
 ```yaml
 # Default
-sysctl_cleanup: false
+catena_sysctl_cleanup: false
 ```
